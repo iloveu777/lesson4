@@ -42,15 +42,38 @@ namespace ConsoleApp7
             //3 способ
             /* string uio = String.Concat(fgh, "!!!");
              Console.WriteLine(uio);*/
-
+            /*
             // 4 способ
             string st1 = "Я";
             string st2 = "люблю";
             string st3 = "программирование";
             /* string st = String.Join(" ", st1, st2, st3 );
-             WriteLine( st );*/
+             WriteLine( st );
             string[] st = new string[] { st1, st2, st3 };
             string s = String.Join(" ", st);
+            Console.WriteLine(s); */
+            string a1 = "фальш";
+            string b3= "монеты";
+            string c4 = "в";
+            string d2 = "ивые";
+            string e5 = "мешках";
+            //cпособ 1
+            // string result = a1 + d2 + b3 +c4 +e5;
+            //Console.WriteLine(result);
+            /*//способ 2
+            a1 += d2;
+            a1 += b3;
+            a1 += c4;
+            a1 += e5;
+            WriteLine(a1);*/
+            // способ 3
+            //string tstst = String.Concat(a1, d2, b3, c4, e5);
+            //Console.WriteLine(tstst);
+            //cпособ 4
+            a1 += d2;
+            string[] asd = new string[] {a1, b3,c4,e5 };
+            
+            string s = String.Join(" ", asd);
             Console.WriteLine(s);
             Console.ReadKey();
         }
