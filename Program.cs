@@ -52,30 +52,37 @@ namespace ConsoleApp7
             string[] st = new string[] { st1, st2, st3 };
             string s = String.Join(" ", st);
             Console.WriteLine(s); */
-            string a1 = "фальш";
-            string b3= "монеты";
-            string c4 = "в";
-            string d2 = "ивые";
-            string e5 = "мешках";
-            //cпособ 1
-            // string result = a1 + d2 + b3 +c4 +e5;
-            //Console.WriteLine(result);
-            /*//способ 2
-            a1 += d2;
-            a1 += b3;
-            a1 += c4;
-            a1 += e5;
-            WriteLine(a1);*/
-            // способ 3
-            //string tstst = String.Concat(a1, d2, b3, c4, e5);
-            //Console.WriteLine(tstst);
-            //cпособ 4
-            a1 += d2;
-            string[] asd = new string[] {a1, b3,c4,e5 };
-            
-            string s = String.Join(" ", asd);
-            Console.WriteLine(s);
-            Console.ReadKey();
+            /* string a1 = "фальш";
+             string b3= "монеты";
+             string c4 = "в";
+             string d2 = "ивые";
+             string e5 = "мешках";
+             //cпособ 1
+             // string result = a1 + d2 + b3 +c4 +e5;
+             //Console.WriteLine(result);
+             //способ 2
+             a1 += d2;
+             a1 += b3;
+             a1 += c4;
+             a1 += e5;
+             WriteLine(a1);
+             // способ 3
+             //string tstst = String.Concat(a1, d2, b3, c4, e5);
+             //Console.WriteLine(tstst);
+             //cпособ 4
+             a1 += d2;
+             string[] asd = new string[] {a1, b3,c4,e5 };
+
+             string s = String.Join(" ", asd);
+             Console.WriteLine(s); */
+            // задание 2
+            Write("Введите строку str: ");
+            string str = ReadLine();
+            Write("Введите подстроку str1: ");
+            string str1 = ReadLine();
+            int i = str.IndexOf(str1);
+            WriteLine($"Индекс вхождения подстроки {str1} в строке {str} равен = {i}");
+            ReadKey();
         }
     }
 }
